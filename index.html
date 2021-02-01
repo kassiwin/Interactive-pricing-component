@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | Interactive pricing component</title>
+    <link href="styles.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="wrapper">
+        <div class="wrapper-inner">
+            <div class="intro-wrapper">
+                <h1 class="intro-title">Simple, traffic-based pricing</h1>
+                <h2 class="intro-text">Sign-up for our 30-day trial. No credit card required. </h2>
+            </div>
+            <div class="card">
+                <div class="card-top">
+                    <div class="flex-row pricing-wrapper">
+                        <div class="page-views">
+                            <span id="page-views">100K</span>
+                            Pageviews
+                        </div>
+                        <div class="price-period">
+                            <span class="pricing">$</span>
+                            <span id="price" class="pricing">16.00</span>
+                            <span class="period"> / month</span>
+                        </div>
+                        <label class="range-wrapper">
+                            <input style="background: linear-gradient(to right, rgb(163, 243, 234) 50%, rgb(236, 243, 253) 50%)"
+                                   id="price-range" type="range" name="quantity" class="range" step="100" min="100"
+                                   max="500"/>
+                        </label>
+                    </div>
+                    <div class="flex-row period-wrapper">
+                        <small>Monthly Billing</small>
+                        <div class="switch-wrapper">
+                            <label class="switch">
+                                <input type="checkbox" id="discount">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                        <small>Yearly Billing</small>
+                        <small class="discount desk">25% discount</small>
+                        <small class="discount mobile">-25%</small>
+                    </div>
+                </div>
+                <div class="card-bottom flex-row">
+                    <ul class="feature-list">
+                        <li>Unlimited websites</li>
+                        <li>100% data ownership</li>
+                        <li>Email reports</li>
+                    </ul>
+                    <button class="trial-cta">Start my trial</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Wallis Kassiwin</a>.
+    </div>
+</div>
+<script src="index.js" type="text/javascript"></script>
+</body>
+</html>
